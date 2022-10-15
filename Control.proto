@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+// The greeting service definition.
+service Control {
+    // Handshake
+    rpc SendHandshake (HandshakeRequest) returns (HandshakeReply) {}
+}
+
+// The request message containing the client data port
+message HandshakeRequest {
+    int32 port = 1;
+}
+
+// The response message containing the server data port
+message HandshakeReply {
+    int32 port = 1;
+}
