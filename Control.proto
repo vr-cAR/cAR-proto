@@ -1,5 +1,5 @@
 syntax = "proto3";
-package cAR;
+package c_ar;
 
 // The greeting service definition.
 service Control {
