@@ -9,11 +9,11 @@ service Control {
 
 // The request message containing the client data port
 message HandshakeRequest {
-    string session_description = 1;
+    string sdp = 1;
     string ice_server = 2;
 }
 
 // The response message containing the server data port
 message HandshakeReply {
-    string session_description = 1;
+    string sdp = 1;
 }
