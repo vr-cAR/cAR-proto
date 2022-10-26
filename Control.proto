@@ -14,8 +14,17 @@ message HandshakeMessage {
     }
 }
 
+enum SdpType {
+    Offer = 0;
+    Pranswer = 1;
+    Answer = 2;
+    Rollback = 3;
+    Unspecified = 4;
+}
+
 message NotifyDescription {
-    string json_base64 = 1;
+    SdpType sdp_type = 1;
+    string sdp = 2;
 }
 
 message NotifyIce {
