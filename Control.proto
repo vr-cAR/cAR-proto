@@ -15,7 +15,7 @@ message HandshakeMessage {
 }
 
 message NotifyDescription {
-    string sdp = 1;
+    string json_base64 = 1;
 }
 
 message NotifyIce {
