@@ -1,0 +1,7 @@
+syntax = "proto3";
+package c_ar;
+
+message ThumbstickDirection {
+    double dx = 1;
+    double dy = 2;
+};
