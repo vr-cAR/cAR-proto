@@ -4,4 +4,5 @@ package c_ar_controls;
 message ThumbstickDirection {
     double dx = 1;
     double dy = 2;
+    int64 seq_num = 3;
 };
