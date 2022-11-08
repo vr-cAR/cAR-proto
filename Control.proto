@@ -3,9 +3,16 @@ package c_ar;
 
 // The greeting service definition.
 service Control {
+    // Health check
+    rpc HealthCheck (HealthCheckRequest) returns (HealthCheckReply) {}
+
     // Handshake
     rpc SendHandshake (stream HandshakeMessage) returns (stream HandshakeMessage) {}
 }
+
+message HealthCheckRequest {}
+
+message HealthCheckReply {}
 
 message HandshakeMessage {
     oneof msg {

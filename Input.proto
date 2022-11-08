@@ -1,5 +1,5 @@
 syntax = "proto3";
-package c_ar;
+package c_ar_controls;
 
 message ThumbstickDirection {
     double dx = 1;
